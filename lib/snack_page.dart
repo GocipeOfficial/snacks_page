@@ -83,14 +83,35 @@ class SnacksPage extends StatelessWidget {
               height: 40.0,
               width: double.infinity,
             ),
+             SizedBox(
+                      height: 120.0,
+                    ),
             Container(
                 child: Column(
                   children: [
                     Image(image: AssetImage('images/Vector.png'),),
-                    Text('Oops you dont have any favourite snack yet'),
-                    Text('Head an to our Snacks category'),
+                     SizedBox(
+                      height: 32.0,
+                    ),
                     Container(
-                      child: Center(child: Text('Categories')),
+                      child: Column(
+                        children: [
+                              Text('Oops you dont have any favourite snack yet',
+                    style: navBarTextStyle(),),
+                    Text('Head an to our Snacks category',
+                    style: navBarTextStyle(),),
+                        ],
+                      ),
+                    ),
+                    
+                    SizedBox(
+                      height: 20.0,
+                    ),
+                    Container(
+                      child: Center(child: Text('Categories',
+                      style: TextStyle(
+                        color: Colors.white,
+                      ),),),
                       width: 116.48,
                       height: 35.37,
                       decoration: BoxDecoration(
@@ -100,7 +121,7 @@ class SnacksPage extends StatelessWidget {
 
                     )
                   ],
-                  mainAxisAlignment: MainAxisAlignment.center,
+                  
                 ),
             ),
           ],
